@@ -13,9 +13,15 @@ _global_script_classes=[ {
 "class": "PlaceholderBoline",
 "language": "GDScript",
 "path": "res://scripts/placeholder_boline.gd"
+}, {
+"base": "Spatial",
+"class": "Player",
+"language": "GDScript",
+"path": "res://scripts/player.gd"
 } ]
 _global_script_class_icons={
-"PlaceholderBoline": ""
+"PlaceholderBoline": "",
+"Player": ""
 }
 
 [application]
@@ -45,6 +51,11 @@ right={
 snip={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+exit={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
 

@@ -2,7 +2,6 @@
 
 [resource]
 background_mode = 1
-fog_enabled = true
 fog_sun_color = Color( 0.701961, 0.858824, 1, 1 )
 ss_reflections_enabled = true
 ssao_enabled = true
