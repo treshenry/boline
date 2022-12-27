@@ -1,8 +1,28 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scenes/field01.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/terrain.gd" type="Script" id=2]
+[ext_resource path="res://scenes/rock.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/luna_bene.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/sol_bene.tscn" type="PackedScene" id=5]
 
 [node name="Terrain" type="Spatial"]
+script = ExtResource( 2 )
 
 [node name="Field01" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -30 )
+
+[node name="SolBene" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.96786, 0.5133, -14.9384 )
+
+[node name="LunaBene" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.667594, 0.787538, -29.9064 )
+
+[node name="Rock" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09123, 1.12188, -4.42622 )
+
+[node name="Rock2" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.154469, 0, 0.987998, 0, 1, 0, -0.987998, 0, -0.154469, -0.974446, 0.529839, -6.72199 )
+
+[node name="Rock3" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.536284, 0, -0.844038, 0, 1, 0, 0.844038, 0, -0.536284, 0.450415, 0.830765, -11.8505 )

@@ -18,6 +18,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.885621, 0 )
 
 [node name="FixedLight" type="SpotLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.935801, 0.352528, 0, -0.352528, 0.935801, 0, 3.8409, 4.00461 )
+light_energy = 0.2
 shadow_enabled = true
 spot_range = 20.0
 spot_attenuation = 1.56917
